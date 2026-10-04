@@ -9,9 +9,9 @@ The project began with the data. SWTS was selected because it provides survey CS
 1. **Choose and document the inputs.** Retain the in-school and employer datasets, collect their column definitions, and use the report to understand what the fields represent. Start with the [raw-data guide](raw_data/README.md).
 2. **Check the coding and build the visuals.** Use the notebook to interpret category codes, handle missing responses and calculate sample summaries. The report, questionnaires and CSVs do not always use matching codes, so unresolved mappings are documented. Continue with the [notebook guide](notebooks/README.md).
 3. **Define and build the SQL data layer.** The [data model](database/DATA_MODEL.md) defines the grains, keys, relationships and app-facing contract. A reproducible script then loads both source CSVs into SQLite and creates documented clean and analysis views; see the [database guide](database/README.md).
-4. **Build a visualisation app.** The planned next step is to query the stable SQLite views from a web interface. The [app directory](visualisation_app/README.md) is currently a placeholder.
+4. **Expose a read-only API.** A FastAPI backend queries the stable SQLite views and documents its frontend contract through Swagger and a checked-in [API contract](visualisation_app/API_CONTRACT.md). A visual frontend is the next planned step.
 
-The notebook and first database layer are complete. The web app is not yet implemented.
+The notebook, first database layer and read-only backend are complete. A visual frontend is not yet implemented.
 
 ## The two visuals
 
@@ -27,8 +27,8 @@ KRI-app/
 |-- raw_data/               # Original CSVs, metadata and source report
 |-- notebooks/              # Analysis notebook and PNG/SVG exports
 |-- database/               # Versioned SQL and generated SQLite data layer
-|-- scripts/                # Reproducible database build command
-|-- visualisation_app/      # Planned web app
+|-- scripts/                # Reproducible database and API commands
+|-- visualisation_app/      # FastAPI backend and frontend API contract
 |-- requirements.txt
 `-- .venv/                  # Local Python environment; excluded from Git
 ```
@@ -58,5 +58,17 @@ From the repository root:
 This creates the ignored file `database/build/kri.sqlite`. The build preserves
 all raw fields and applies the notebook's mappings in versioned SQL views; see
 the [data-layer documentation](database/README.md) for the schema and decisions.
+
+## Run the backend
+
+After building the database, start the API:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\run_api.py --reload
+```
+
+Open <http://127.0.0.1:8000/docs> for Swagger UI. Endpoint details and the
+future frontend's expected fields are documented in the
+[API contract](visualisation_app/API_CONTRACT.md).
 
 Data and report: Khazanah Research Institute (2018), *The School-to-Work Transition of Young Malaysians*. CC BY 3.0. This is an independent project, not an official KRI application.
