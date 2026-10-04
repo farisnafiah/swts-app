@@ -9,9 +9,9 @@ The project began with the data. SWTS was selected because it provides survey CS
 1. **Choose and document the inputs.** Retain the in-school and employer datasets, collect their column definitions, and use the report to understand what the fields represent. Start with the [raw-data guide](raw_data/README.md).
 2. **Check the coding and build the visuals.** Use the notebook to interpret category codes, handle missing responses and calculate sample summaries. The report, questionnaires and CSVs do not always use matching codes, so unresolved mappings are documented. Continue with the [notebook guide](notebooks/README.md).
 3. **Define and build the SQL data layer.** The [data model](database/DATA_MODEL.md) defines the grains, keys, relationships and app-facing contract. A reproducible script then loads both source CSVs into SQLite and creates documented clean and analysis views; see the [database guide](database/README.md).
-4. **Expose a read-only API.** A FastAPI backend queries the stable SQLite views and documents its frontend contract through Swagger and a checked-in [API contract](visualisation_app/API_CONTRACT.md). A visual frontend is the next planned step.
+4. **Expose and visualise the results.** A FastAPI backend queries the stable SQLite views and documents its contract through Swagger and a checked-in [API contract](visualisation_app/API_CONTRACT.md). The frontend consumes that contract to show school pathways and employer salary offers.
 
-The notebook, first database layer and read-only backend are complete. A visual frontend is not yet implemented.
+The notebook, first database layer, read-only backend and both visualisations are implemented. A shared state selector filters both survey samples independently.
 
 ## The two visuals
 
@@ -28,7 +28,7 @@ KRI-app/
 |-- notebooks/              # Analysis notebook and PNG/SVG exports
 |-- database/               # Versioned SQL and generated SQLite data layer
 |-- scripts/                # Reproducible database and API commands
-|-- visualisation_app/      # FastAPI backend and frontend API contract
+|-- visualisation_app/      # FastAPI backend, API contract and frontend
 |-- requirements.txt
 `-- .venv/                  # Local Python environment; excluded from Git
 ```
@@ -67,8 +67,8 @@ After building the database, start the API:
 .\.venv\Scripts\python.exe scripts\run_api.py --reload
 ```
 
-Open <http://127.0.0.1:8000/docs> for Swagger UI. Endpoint details and the
-future frontend's expected fields are documented in the
-[API contract](visualisation_app/API_CONTRACT.md).
+Open <http://127.0.0.1:8000> for the visualisations or
+<http://127.0.0.1:8000/docs> for Swagger UI. The frontend's expected fields are
+documented in the [API contract](visualisation_app/API_CONTRACT.md).
 
 Data and report: Khazanah Research Institute (2018), *The School-to-Work Transition of Young Malaysians*. CC BY 3.0. This is an independent project, not an official KRI application.

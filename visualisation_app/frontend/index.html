@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Unweighted views of school pathways and employer salary offers in KRI's School-to-Work Transition Survey.">
+  <title>Pathways and pay · Malaysia</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#evidence">Skip to the evidence</a>
+
+  <header class="site-header">
+    <div class="page-width header-inner">
+      <a class="wordmark" href="#top" aria-label="Pathways in context, home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        Pathways in context <span>/ Malaysia</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#evidence">The evidence</a>
+        <a href="#methods">Methods</a>
+        <a href="/docs">API <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero page-width" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> School-to-work transition · 2017–18</p>
+        <h1 id="page-title">Different pathways,<br><em>different signals.</em></h1>
+        <p class="hero-description">Two views of the transition from school to work: where surveyed students studied, and the maximum salaries a selected group of employers reported offering.</p>
+        <div class="hero-tags" aria-label="Analysis scope">
+          <span>Malaysia</span><span>KRI SWTS</span><span>Unweighted sample</span>
+        </div>
+      </div>
+      <aside class="hero-question" aria-label="Question explored">
+        <p class="aside-label">THE QUESTION</p>
+        <p>Where does technical education sit—and what do employer offers look like?</p>
+        <div class="route" aria-hidden="true"><span>School</span><i></i><strong>Pathway</strong><i></i><span>Pay</span></div>
+      </aside>
+    </section>
+
+    <section class="context-strip" aria-label="Dataset context">
+      <div class="page-width context-grid">
+        <div><span>In-school records</span><strong id="record-count">—</strong></div>
+        <div><span>A1 = 3 employers</span><strong id="employer-count">—</strong></div>
+        <div><span>Evidence views</span><strong>2</strong></div>
+        <p>These are separate, unweighted samples. Students are not linked to the surveyed employers.</p>
+      </div>
+    </section>
+
+    <section class="filter-wrap page-width" aria-labelledby="filter-title">
+      <form id="state-filter" class="filter-panel">
+        <div>
+          <p class="eyebrow">EXPLORE THE SAMPLES</p>
+          <h2 id="filter-title">Choose a state</h2>
+          <p>The same state code is applied separately to students and employers.</p>
+        </div>
+        <div class="filter-control">
+          <label for="state">State</label>
+          <select id="state" name="state_code" disabled>
+            <option value="">All states</option>
+          </select>
+          <span id="filter-status" role="status" aria-live="polite">Loading state labels…</span>
+        </div>
+      </form>
+    </section>
+
+    <section id="evidence" class="evidence page-width" aria-labelledby="chart-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE EVIDENCE</p><h2 id="chart-title">School pathways by ethnicity</h2></div>
+        <span id="pathway-sample-badge" class="sample-badge">All states · within-group share</span>
+      </div>
+
+      <div id="load-status" class="status" role="status" aria-live="polite"><i></i>Loading survey data…</div>
+      <div id="error-panel" class="error-panel" role="alert" hidden>
+        <strong>The chart could not be loaded.</strong>
+        <p id="error-message"></p>
+        <button id="retry" type="button">Try again</button>
+      </div>
+
+      <article id="chart-card" class="chart-card" aria-busy="true" hidden>
+        <div id="legend" class="legend" aria-label="School pathway legend"></div>
+        <div class="chart-layout">
+          <div class="axis-title">Share of respondents within each ethnic group</div>
+          <div id="chart" class="chart" role="img" aria-label="School pathway distribution by ethnicity"></div>
+          <div class="axis" aria-hidden="true"><span>0%</span><span>20</span><span>40</span><span>60</span><span>80</span><span>100%</span></div>
+        </div>
+        <div class="reading-note">
+          <p class="aside-label">WHAT TO LOOK FOR</p>
+          <p>Technical and vocational participation is shown in gold. The label beside each bar gives its count and share within that ethnicity group.</p>
+        </div>
+        <details class="data-details">
+          <summary>View the underlying data <span aria-hidden="true">+</span></summary>
+          <div id="data-table" class="table-scroll"></div>
+        </details>
+      </article>
+    </section>
+
+    <section id="salary-evidence" class="salary-evidence page-width" aria-labelledby="salary-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE EMPLOYER VIEW</p><h2 id="salary-title">Maximum offers by qualification</h2></div>
+        <span id="salary-sample-badge" class="sample-badge">All states · monthly MYR</span>
+      </div>
+
+      <div id="salary-load-status" class="status" role="status" aria-live="polite"><i></i>Loading salary data…</div>
+      <div id="salary-error-panel" class="error-panel" role="alert" hidden>
+        <strong>The salary chart could not be loaded.</strong>
+        <p id="salary-error-message"></p>
+        <button id="salary-retry" type="button">Try again</button>
+      </div>
+
+      <article id="salary-card" class="chart-card salary-card" aria-busy="true" hidden>
+        <div class="legend salary-legend" aria-label="Salary chart legend">
+          <span><i class="dot-key"></i>Individual employer response</span>
+          <span><i class="mean-key"></i>Unweighted mean</span>
+          <span><i class="median-key"></i>Median</span>
+        </div>
+        <div id="salary-chart" class="salary-chart" role="img" aria-label="Maximum salary offers by qualification"></div>
+        <p id="salary-scroll-note" class="scroll-note">Scroll horizontally to inspect the chart on a small screen.</p>
+        <div class="reading-note">
+          <p class="aside-label">WHAT TO LOOK FOR</p>
+          <p>Each dot is one valid maximum offer. The diamond shows the mean and the vertical line shows the median; neither represents the single highest offer.</p>
+        </div>
+        <div class="caveat-note"><strong>A1 = 3</strong><span id="employer-label">Questionnaire label: public sector/government agency. Mapping to the released CSV remains unconfirmed.</span></div>
+        <details class="data-details">
+          <summary>View the salary summaries <span aria-hidden="true">+</span></summary>
+          <div id="salary-table" class="table-scroll"></div>
+        </details>
+      </article>
+    </section>
+
+    <section id="methods" class="methods">
+      <div class="page-width methods-grid">
+        <div>
+          <p class="eyebrow">READING THE RESULT</p>
+          <h2>A sample description,<br>not a population estimate.</h2>
+        </div>
+        <div class="methods-copy">
+          <p>The pathway chart uses all in-school records in the released SWTS file. Ethnicity codes 1 and 2 are combined as Bumiputera, while detailed school types are grouped into four pathway families.</p>
+          <p>The salary chart uses valid maximum offers from employer records where <code>A1 = 3</code>. These are reported offers, not realised earnings or causal returns to qualifications.</p>
+          <p>KRI's published report used survey weights, but no identifiable weight field is present in the public CSVs. Differences from published estimates are therefore expected.</p>
+          <div class="method-links"><a href="/docs">Explore the API ↗</a><a href="https://www.krinstitute.org/publications/the-school-to-work-transition-survey-swts-of-young-malaysian" target="_blank" rel="noopener noreferrer">Original dataset ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width"><strong>Pathways in context <span>/ Malaysia</span></strong><p>Independent visualisation using KRI's SWTS data. Not an official KRI publication.</p><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <noscript><div class="noscript">Enable JavaScript to load the chart. The same data is available through the API documentation.</div></noscript>
+</body>
+</html>

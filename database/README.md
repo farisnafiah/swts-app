@@ -75,10 +75,10 @@ so the SQL object is deliberately named with the code rather than the label.
 
 ## Incremental app boundary
 
-The web app should initially query the two analysis views rather than duplicate
-their transformations. A later state filter can query the clean views, apply
-`state_code` first, and then perform the same groupings. If that query becomes
-stable, it can be promoted to another versioned SQL view.
+The unfiltered web app queries correspond to the two analysis views. Its
+optional state filter uses parameterised queries against the clean views,
+applies `state_code` first, and then performs the same groupings. This preserves
+the correct denominator for each selected state.
 
 Do not edit the generated SQLite file by hand. Change a numbered SQL file or the
 loader, then rebuild. A later schema change should normally be added as the next

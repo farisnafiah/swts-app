@@ -15,7 +15,8 @@ Base URL during local development: `http://127.0.0.1:8000`
   supplied order fields rather than alphabetical ordering.
 - Missing salary responses are excluded from `observations` and summary
   calculations; they are not returned as zero.
-- State filtering is not part of version 1.
+- Both visual endpoints accept an optional `state_code` query parameter from 1
+  to 16. The code is applied independently to the two survey samples.
 - If the generated database is unavailable, data endpoints return HTTP `503`
   with a build instruction in `detail`.
 
@@ -23,10 +24,14 @@ Base URL during local development: `http://127.0.0.1:8000`
 
 Purpose: supplies the complete dataset for the stacked school-pathway chart.
 
+Optional query: `state_code`, an integer from 1 to 16. Omit it for all states.
+
 Top-level fields:
 
 | Field | Type | Meaning |
 | --- | --- | --- |
+| `state_code` | integer or null | Applied state code; null means all states. |
+| `state_label` | string | Display label for the selected state. |
 | `weighting` | string | Always `unweighted`. |
 | `total_respondents` | integer | Number of in-school records represented. |
 | `items` | array | One item for every ethnicity and pathway combination. |
@@ -50,6 +55,8 @@ Example shape:
 
 ```json
 {
+  "state_code": null,
+  "state_label": "All states",
   "weighting": "unweighted",
   "total_respondents": 7026,
   "items": [
@@ -71,10 +78,14 @@ Example shape:
 Purpose: supplies the individual dots and summary markers for the maximum
 salary-offer chart.
 
+Optional query: `state_code`, an integer from 1 to 16. Omit it for all states.
+
 Top-level fields:
 
 | Field | Type | Meaning |
 | --- | --- | --- |
+| `state_code` | integer or null | Applied state code; null means all states. |
+| `state_label` | string | Display label for the selected state. |
 | `employer_type_code` | integer | Always `3` in version 1. |
 | `employer_type_label` | string | Label from the published questionnaire. |
 | `label_status` | string | Warns that the label is not confirmed for the CSV export. |
@@ -112,7 +123,18 @@ combine `qualification_order` and `employer_id`. `employers` will be larger
 than some `responses` values because missing salary fields are excluded
 separately for each qualification.
 
+Some state codes have no employer records in the released employer file. In
+that case, `employers` is zero and both salary arrays are empty; the frontend
+must present unavailable evidence rather than a zero salary.
+
+## `GET /api/v1/states`
+
+Returns the 16 state-code labels from the SWTS coding manual in code order.
+Each item contains integer `code` and string `label` fields. The frontend uses
+this endpoint to populate its shared state selector.
+
 ## Service endpoints
 
-- `GET /` returns links to the documentation and OpenAPI schema.
+- `GET /` serves the visualisation page.
+- `GET /api` returns links to the documentation and OpenAPI schema.
 - `GET /health` confirms that the backend can read the SQLite database.

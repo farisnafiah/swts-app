@@ -35,8 +35,8 @@ flowchart LR
 
     ASP --> APP[Future web app]
     ASA --> APP
-    CIS -. future state filter .-> APP
-    CSO -. future state filter .-> APP
+    CIS -. state-filtered API query .-> APP
+    CSO -. state-filtered API query .-> APP
 ```
 
 The layers have different responsibilities:
@@ -177,16 +177,18 @@ fields.
 The first web-app version should read the two `analysis_*` views. This keeps
 the UI concerned with presentation rather than survey-code interpretation.
 
-For a future state filter, the query order should be:
+For the implemented state filter, the query order is:
 
 1. select a `clean_*` view;
 2. filter by `state_code`;
 3. calculate the same grouping and measures as the relevant analysis view; and
 4. return the result to the visualisation.
 
-Once state-filtered queries are settled, they can become parameterised
-application queries or additional SQL views. State labels should not be added
-until their source mapping has been verified and documented.
+These are parameterised application queries because the selected code changes
+per request. State labels follow page 1 of the SWTS coding manual: 1 Johor, 2
+Kedah, 3 Kelantan, 4 Melaka, 5 Negeri Sembilan, 6 Pahang, 7 Penang, 8 Perak, 9
+Perlis, 10 Selangor, 11 Terengganu, 12 Sabah, 13 Sarawak, 14 W.P. Kuala Lumpur,
+15 W.P. Labuan and 16 W.P. Putrajaya.
 
 ## Known boundaries
 
