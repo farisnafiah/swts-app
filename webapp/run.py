@@ -24,7 +24,7 @@ def parse_args() -> argparse.Namespace:
 if __name__ == "__main__":
     arguments = parse_args()
     uvicorn.run(
-        "visualisation_app.main:app",
+        "webapp.main:app",
         host=arguments.host,
         port=arguments.port,
         reload=arguments.reload,
