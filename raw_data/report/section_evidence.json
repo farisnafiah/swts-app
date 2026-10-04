@@ -1,0 +1,81 @@
+{
+  "citation": "Khazanah Research Institute. 2018. The School-to-Work Transition of Young Malaysians. Kuala Lumpur: Khazanah Research Institute.",
+  "license": "CC BY 3.0; verified on full PDF page 3 (copyright page)",
+  "landing_url": "https://www.krinstitute.org/file/20181205-swts-main-book",
+  "pdf_url": "https://cdn.prod.website-files.com/684b55df28cddcbe52b406f2/68bf93c3c4c69d494ed4c212_20181205_SWTS_Main%20Book.pdf",
+  "accessed": "2026-10-03",
+  "method": "School pathways calculated from SWTS_InSchool.csv; maximum salary offers from SWTS_Employer.csv A1=3. Summaries are unweighted and descriptive, not replications of report estimates; the employer-type export label is unconfirmed.",
+  "claims": [
+    {
+      "id": "salary_university",
+      "page": 239,
+      "kind": "approximate reported difference",
+      "claim": "Public-sector maximum salary offers for TVET are about RM3,000 below university graduates.",
+      "visual": "Topic context only; Visual 2 describes A1=3 sample offers without attempting to reproduce the report claim",
+      "value": 3000,
+      "unit": "RM/month",
+      "direction": "university minus TVET",
+      "approximate": true
+    },
+    {
+      "id": "salary_spm",
+      "page": 239,
+      "kind": "approximate reported difference",
+      "claim": "Public-sector maximum salary offers for TVET are about RM500 above SPM holders.",
+      "visual": "Topic context only; Visual 2 describes A1=3 sample offers without attempting to reproduce the report claim",
+      "value": -500,
+      "unit": "RM/month",
+      "direction": "SPM minus TVET",
+      "approximate": true
+    },
+    {
+      "id": "ethnicity_chinese",
+      "page": 28,
+      "kind": "reported percentage",
+      "claim": "1% of Chinese secondary-school students pursue technical and vocational education.",
+      "visual": "Context for 01_school_pathways_by_ethnicity; published value is not used as chart data",
+      "group": "Chinese",
+      "value": 1,
+      "unit": "percent",
+      "population": "Secondary-school students within the Chinese group",
+      "precision": "as printed; rounded precision not specified"
+    },
+    {
+      "id": "ethnicity_indian",
+      "page": 28,
+      "kind": "reported percentage",
+      "claim": "4% of Indian secondary-school students pursue technical and vocational education.",
+      "visual": "Context for 01_school_pathways_by_ethnicity; published value is not used as chart data",
+      "group": "Indian",
+      "value": 4,
+      "unit": "percent",
+      "population": "Secondary-school students within the Indian group",
+      "precision": "as printed; rounded precision not specified"
+    },
+    {
+      "id": "ethnicity_bumiputera",
+      "page": 28,
+      "kind": "reported percentage",
+      "claim": "15% of Bumiputera secondary-school students pursue technical and vocational education.",
+      "visual": "Context for 01_school_pathways_by_ethnicity; published value is not used as chart data",
+      "group": "Bumiputera",
+      "value": 15,
+      "unit": "percent",
+      "population": "Secondary-school students within the Bumiputera group",
+      "precision": "as printed; rounded precision not specified"
+    }
+  ],
+  "full_report_file": "20181205_SWTS_Main_Book.pdf",
+  "relevant_pages": [
+    {
+      "printed_page": 28,
+      "full_pdf_page_1_based": 41,
+      "scope": "Chart 2.3 and the TVET paragraph; unrelated STEM discussion is outside the notebook scope."
+    },
+    {
+      "printed_page": 239,
+      "full_pdf_page_1_based": 252,
+      "scope": "TVET salary comparison and policy context."
+    }
+  ]
+}

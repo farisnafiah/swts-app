@@ -1,0 +1,1001 @@
+{
+  "source_url": "https://www.krinstitute.org/publications/the-school-to-work-transition-survey-swts-of-young-malaysian",
+  "accessed": "2026-10-02",
+  "license": "SWTS dataset: CC BY 3.0",
+  "tables": {
+    "SWTS_Employer": [
+      [
+        "state",
+        "int8",
+        "state"
+      ],
+      [
+        "module",
+        "int8",
+        "questionnaire module"
+      ],
+      [
+        "Category",
+        "float64",
+        "Company category"
+      ],
+      [
+        "Subsector",
+        "int8",
+        "Subsector category"
+      ],
+      [
+        "Group",
+        "object",
+        "Group A-J MSIC"
+      ],
+      [
+        "A1",
+        "float64",
+        "What is the type of your company?"
+      ],
+      [
+        "A1_11other",
+        "object",
+        "Other, specify"
+      ],
+      [
+        "A2",
+        "int8",
+        "In which sector does your company MAINLY operate? (SELECT ONE)"
+      ],
+      [
+        "A2_19other",
+        "object",
+        "Other, specify"
+      ],
+      [
+        "A3",
+        "object",
+        "Please specify the MAIN product or service of your company."
+      ],
+      [
+        "A4_1",
+        "int8",
+        "Restrictive regulations for business"
+      ],
+      [
+        "A4_2",
+        "int8",
+        "High taxation"
+      ],
+      [
+        "A4_3",
+        "int8",
+        "Poor economic conditions"
+      ],
+      [
+        "A4_4",
+        "int8",
+        "Too much competition"
+      ],
+      [
+        "A4_5",
+        "int8",
+        "Lack of skilled workers"
+      ],
+      [
+        "A4_6",
+        "int8",
+        "Shortage of unskilled/manual workers"
+      ],
+      [
+        "A4_7",
+        "int8",
+        "High labour cost"
+      ],
+      [
+        "A4_8",
+        "int8",
+        "Lack of credit/funding"
+      ],
+      [
+        "A4_9",
+        "int8",
+        "Unsatisfactory public utilities (water, electricity and transportation)"
+      ],
+      [
+        "A4_10",
+        "int8",
+        "Unsatisfactory internet service"
+      ],
+      [
+        "A4_11",
+        "int8",
+        "Lack of access to new technology"
+      ],
+      [
+        "A4_12",
+        "int8",
+        "Harassment by authorities"
+      ],
+      [
+        "A4_13",
+        "int8",
+        "Unfavourable currency exchange rates"
+      ],
+      [
+        "B1",
+        "int8",
+        "Does your company provide training for young, newly recruited employees?"
+      ],
+      [
+        "B2_1",
+        "float64",
+        "In-house structured training programme"
+      ],
+      [
+        "B2_2",
+        "float64",
+        "External (with training provider)"
+      ],
+      [
+        "B2_3",
+        "float64",
+        "Secondment/attachment with another company/institution"
+      ],
+      [
+        "B2_4other",
+        "object",
+        "Other, specify"
+      ],
+      [
+        "B3_1",
+        "int8",
+        "1Malaysia Training Scheme"
+      ],
+      [
+        "B3_2",
+        "int8",
+        "Graduate Employability Management Scheme"
+      ],
+      [
+        "B4",
+        "float64",
+        "If yes, how is the programme funded?"
+      ],
+      [
+        "B4_4other",
+        "object",
+        "Other, specify"
+      ],
+      [
+        "B5",
+        "float64",
+        "In the last two years, what is the total number of participants in the programme?"
+      ],
+      [
+        "B6",
+        "float64",
+        "How many participants were hired by your company?"
+      ],
+      [
+        "B7",
+        "float64",
+        "Does your company have an annual training budget?"
+      ],
+      [
+        "B8",
+        "int8",
+        "Is your company registered with any employment service/recruitment agency?"
+      ],
+      [
+        "B9",
+        "float64",
+        "If yes, how useful would you rate the employment service in terms of recruiting workers you need?"
+      ],
+      [
+        "B10",
+        "float64",
+        "Does your company provide work experience for young people to fulfil their course requirement?"
+      ],
+      [
+        "B11",
+        "float64",
+        "Does your company advise educational/training institutions on industry skill requirements?"
+      ],
+      [
+        "B12",
+        "float64",
+        "Does your company participate in events, such as job fairs, to inform young people of job opportunities?"
+      ],
+      [
+        "B13",
+        "float64",
+        "Is your company invited by educational/training institutions to provide career guidance?"
+      ],
+      [
+        "C1_employees_male",
+        "float64",
+        "Male employees"
+      ],
+      [
+        "C1_employees_female",
+        "float64",
+        "Female employees"
+      ],
+      [
+        "C1_employees_total",
+        "float64",
+        "Total employees"
+      ],
+      [
+        "C1_below30_male",
+        "float64",
+        "Male employees below 30 years old"
+      ],
+      [
+        "C1_below30_female",
+        "float64",
+        "Female employees below 30 years old"
+      ],
+      [
+        "C1_below30_total",
+        "float64",
+        "Total employees below 30 years old"
+      ],
+      [
+        "C2",
+        "float64",
+        "Over the past two years, has your company been increasing, maintaining or reducing the total number of workers?"
+      ],
+      [
+        "C3",
+        "float64",
+        "In the next two years, does your company expect to increase, maintain or reduce the total number of workers?"
+      ],
+      [
+        "C4",
+        "float64",
+        "What is the MAIN method used by your company to fill vacancies?"
+      ],
+      [
+        "C5a_undergraduate_minimum",
+        "object",
+        "Minimum salary per month for undergraduate employees"
+      ],
+      [
+        "C5a_undergraduate_maximum",
+        "object",
+        "Maximum salary per month for undergraduate employees"
+      ],
+      [
+        "C5b_postgraduate_minimum",
+        "object",
+        "Minimum salary per month for postgraduate employees"
+      ],
+      [
+        "C5b_postgraduate_maximum",
+        "object",
+        "Maximum salary per month for postgraduate employees"
+      ],
+      [
+        "C5c_college_minimum",
+        "object",
+        "Minimum salary per month for college graduates"
+      ],
+      [
+        "C5c_college_maximum",
+        "object",
+        "Maximum salary per month for college graduates"
+      ],
+      [
+        "C5d_schoollever_minimum",
+        "object",
+        "Minimum salary per month for school leavers"
+      ],
+      [
+        "C5d_schoollever_maximum",
+        "object",
+        "Maximum salary per month for school leavers"
+      ],
+      [
+        "C6",
+        "float64",
+        "Have you faced problems recruiting the kinds of young worker you require for your company?"
+      ],
+      [
+        "C6_2specify",
+        "object",
+        "Yes, specify"
+      ],
+      [
+        "C7a_age_skilledprofessional",
+        "float64",
+        "Age preference for skilled/professional workers"
+      ],
+      [
+        "C7a_age_lowskilledmanual",
+        "float64",
+        "Age preference for low-skilled/manual workers"
+      ],
+      [
+        "C7b_sex_skilledprofessional",
+        "float64",
+        "Sex preference for skilled/professional workers"
+      ],
+      [
+        "C7b_sex_lowskilledmanual",
+        "float64",
+        "Sex preference for low-skilled/manual workers"
+      ],
+      [
+        "C7c_maritalstatus_skilledprofess",
+        "float64",
+        "Marital status preference for skilled/professional workers"
+      ],
+      [
+        "C7c_maritalstatus_lowskilledmanu",
+        "float64",
+        "Marital status preference for low-skilled/manual workers"
+      ],
+      [
+        "C7d_qualifications_skilledprofes",
+        "float64",
+        "Qualifications preference for skilled/professional workers"
+      ],
+      [
+        "C7d_qualifications_lowskilledman",
+        "float64",
+        "Qualifications preference for low-skilled/manual workers"
+      ],
+      [
+        "C7e_language_skilledprofessional",
+        "float64",
+        "Language preference for skilled/professional workers"
+      ],
+      [
+        "C7e_language_lowskilledmanual",
+        "float64",
+        "Language preference for low-skilled/manual workers"
+      ],
+      [
+        "C8_1",
+        "float64",
+        "Academic qualifications"
+      ],
+      [
+        "C8_2",
+        "float64",
+        "Technical/professional skills"
+      ],
+      [
+        "C8_3",
+        "float64",
+        "Communication skills"
+      ],
+      [
+        "C8_4",
+        "float64",
+        "Writing skills"
+      ],
+      [
+        "C8_5",
+        "float64",
+        "Computer/IT skills"
+      ],
+      [
+        "C8_6",
+        "float64",
+        "Teamwork skills"
+      ],
+      [
+        "C8_7",
+        "float64",
+        "Discipline and commitment"
+      ],
+      [
+        "C8_8",
+        "float64",
+        "Innovative and creative"
+      ],
+      [
+        "C8_9",
+        "float64",
+        "Overall preparedness for work"
+      ],
+      [
+        "C9",
+        "float64",
+        "Of the characteristics listed below, what is most important for your company in hiring a skilled/professional worker?"
+      ],
+      [
+        "C10_1",
+        "float64",
+        "Soft skills"
+      ],
+      [
+        "C10_2",
+        "float64",
+        "Hard skills"
+      ],
+      [
+        "C10_3",
+        "float64",
+        "Work experience"
+      ],
+      [
+        "C11",
+        "float64",
+        "In your opinion, what is the MAIN aspect that youth look for when choosing a job?"
+      ],
+      [
+        "C11_12other",
+        "object",
+        "Other, specify"
+      ]
+    ],
+    "SWTS_InSchool": [
+      [
+        "state",
+        "int8",
+        "state"
+      ],
+      [
+        "module",
+        "int8",
+        "questionnaire module"
+      ],
+      [
+        "strata",
+        "int8",
+        "area"
+      ],
+      [
+        "form",
+        "int8",
+        "form"
+      ],
+      [
+        "form_others",
+        "object",
+        "form_others"
+      ],
+      [
+        "gender",
+        "int8",
+        "gender"
+      ],
+      [
+        "ethnic",
+        "int8",
+        "ethnicity"
+      ],
+      [
+        "ethnic_a",
+        "object",
+        "other, specify"
+      ],
+      [
+        "age",
+        "int8",
+        "age"
+      ],
+      [
+        "SchoolType1",
+        "int8",
+        "School type (full)"
+      ],
+      [
+        "A11",
+        "int8",
+        "current residence"
+      ],
+      [
+        "A12_year",
+        "float64",
+        "specify year"
+      ],
+      [
+        "A3",
+        "float64",
+        "main reason for moving to current residence"
+      ],
+      [
+        "A3_a",
+        "object",
+        "other, specify"
+      ],
+      [
+        "A4_oldbro",
+        "int8",
+        "older brothers"
+      ],
+      [
+        "A4_oldsis",
+        "int8",
+        "older sisters"
+      ],
+      [
+        "A4_ybro",
+        "int8",
+        "younger brothers"
+      ],
+      [
+        "A4_ysis",
+        "int8",
+        "younger sisters"
+      ],
+      [
+        "A5_father",
+        "float64",
+        "father_highest education"
+      ],
+      [
+        "A5_father_others",
+        "object",
+        "other, specify"
+      ],
+      [
+        "A5_mother",
+        "float64",
+        "mother_highest education"
+      ],
+      [
+        "A5_mother_other",
+        "object",
+        "other, specify"
+      ],
+      [
+        "A6_1",
+        "object",
+        "father main occupation"
+      ],
+      [
+        "A6_2",
+        "object",
+        "mother main occupation"
+      ],
+      [
+        "A7_father",
+        "float64",
+        "father main occupational sector"
+      ],
+      [
+        "A7_mother",
+        "float64",
+        "mother main occupational sector"
+      ],
+      [
+        "A8",
+        "float64",
+        "family status"
+      ],
+      [
+        "B1_1",
+        "int8",
+        "Biology"
+      ],
+      [
+        "B1_2",
+        "float64",
+        "Chemistry"
+      ],
+      [
+        "B1_3",
+        "int8",
+        "Physics"
+      ],
+      [
+        "B1_4",
+        "int8",
+        "Additional mathematics"
+      ],
+      [
+        "B1_5",
+        "int8",
+        "Computer science"
+      ],
+      [
+        "B1_6",
+        "int8",
+        "Economics"
+      ],
+      [
+        "B2",
+        "float64",
+        "who chose your main field of study?"
+      ],
+      [
+        "B2_4other",
+        "object",
+        "other, specify"
+      ],
+      [
+        "B3",
+        "float64",
+        "Have you received advice on the types of education or training to find a good job?"
+      ],
+      [
+        "B4",
+        "float64",
+        "If yes, what was the main source of advice?"
+      ],
+      [
+        "B4_8other",
+        "object",
+        "other, specify"
+      ],
+      [
+        "B5",
+        "float64",
+        "plan after completing education/training"
+      ],
+      [
+        "B5_8other",
+        "object",
+        "other, specify"
+      ],
+      [
+        "B6",
+        "float64",
+        "If you look for job immediately after your current level of education/training, what kind of job would you realistically expect to be able to obtain?"
+      ],
+      [
+        "B6_13other",
+        "object",
+        "other, specify"
+      ],
+      [
+        "B7",
+        "float64",
+        "Willing to wait for job"
+      ],
+      [
+        "B7_depends",
+        "object",
+        "Depends on"
+      ],
+      [
+        "C1",
+        "float64",
+        "what is the most important goal in your life?"
+      ],
+      [
+        "C1_12_other",
+        "object",
+        "other, specify"
+      ],
+      [
+        "C2_men",
+        "float64",
+        "good age to start working for Men"
+      ],
+      [
+        "C2_women",
+        "float64",
+        "good age to start working for Women"
+      ],
+      [
+        "C3",
+        "float64",
+        "education or training most useful"
+      ],
+      [
+        "C3_12other",
+        "object",
+        "other, specify"
+      ],
+      [
+        "C4",
+        "float64",
+        "which quality is the most useful in finding a good job?"
+      ],
+      [
+        "C4_14_other",
+        "object",
+        "other, specify"
+      ],
+      [
+        "C5",
+        "int8",
+        "which type of type of work would you prefer?"
+      ],
+      [
+        "C5_12other",
+        "object",
+        "other, specify"
+      ],
+      [
+        "C6",
+        "object",
+        "ideally, what is your preferred occupation?"
+      ],
+      [
+        "C7",
+        "int8",
+        "preference of sector"
+      ],
+      [
+        "C7_19other",
+        "object",
+        "other, specify"
+      ],
+      [
+        "C8",
+        "float64",
+        "ideally, what would be the most important characteristics of a job?"
+      ],
+      [
+        "C8_12other",
+        "object",
+        "other, specify"
+      ],
+      [
+        "C9",
+        "object",
+        "what is the minimum salary you would accept for a job?"
+      ],
+      [
+        "C10",
+        "int8",
+        "Job opportunities linked to internet"
+      ],
+      [
+        "C11_migrant",
+        "float64",
+        "migrant workers benefit Malaysian economy"
+      ],
+      [
+        "C11_migrant_3agree",
+        "object",
+        "3. agree other reasons"
+      ],
+      [
+        "C11_migrant_7disagree",
+        "object",
+        "7. disagree other reasons"
+      ],
+      [
+        "C11_expatriate",
+        "float64",
+        "expatriate workers benefit Malaysian economy"
+      ],
+      [
+        "C11_expatriate_3agree",
+        "object",
+        "3. agree other reasons"
+      ],
+      [
+        "C11_expatriate_7disagree",
+        "object",
+        "7. disagree other reasons"
+      ],
+      [
+        "C12_migrant",
+        "float64",
+        "do you consider that migrant workers are a threat to your job opportunities?"
+      ],
+      [
+        "C12_expatriate",
+        "float64",
+        "do you consider that expatriate workers are a threat to your job opportunities?"
+      ],
+      [
+        "C13_migrant",
+        "float64",
+        "Reason why employers hire migrant workers"
+      ],
+      [
+        "C13_expatriate",
+        "float64",
+        "Reason why employers hire expatriate workers"
+      ],
+      [
+        "C14",
+        "object",
+        "who/what is your inspiration?"
+      ]
+    ]
+  },
+  "local_inventory": [
+    {
+      "file": "SWTS_Employer.csv",
+      "rows": 1620,
+      "columns": 109,
+      "headers": [
+        "state",
+        "module",
+        "Category",
+        "Subsector",
+        "Group",
+        "A1",
+        "A1_11other",
+        "A2",
+        "A2_19other",
+        "A3",
+        "A4_1",
+        "A4_2",
+        "A4_3",
+        "A4_4",
+        "A4_5",
+        "A4_6",
+        "A4_7",
+        "A4_8",
+        "A4_9",
+        "A4_10",
+        "A4_11",
+        "A4_12",
+        "A4_13",
+        "B1",
+        "B2_1",
+        "B2_2",
+        "B2_3",
+        "B2_4other",
+        "B3_1",
+        "B3_2",
+        "B4",
+        "B4_4other",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B13",
+        "C1_employees_male",
+        "C1_employees_female",
+        "C1_employees_total",
+        "C1_below30_male",
+        "C1_below30_female",
+        "C1_below30_total",
+        "C1_1_below30_managerial_male",
+        "C1_1_below30_managerial_female",
+        "C1_1_below30_managerial_total",
+        "C1_2_below30_skilled_male",
+        "C1_2_below30_skilled_female",
+        "C1_2_below30_skilled_total",
+        "C1_3_below30_lowskilled_male",
+        "C13_below30_lowskilled_female",
+        "C13_below30_lowskilled_total",
+        "C14_below30_unigraduates_male",
+        "C14_below30_unigraduates_female",
+        "C14_below30_unigraduates_total",
+        "C15_below30_collegegraduates_ma",
+        "C15_below30_collegegraduates_fe",
+        "C15_below30_collegegraduates_to",
+        "C16_below30_schoolleavers_male",
+        "C16_below30_schoolleavers_femal",
+        "C16_below30_schoolleavers_total",
+        "C1_migrantworkers_male",
+        "C1_migrantworkers_female",
+        "C1_migrantworkers_total",
+        "C1_expatriates_male",
+        "C1_expatriates_female",
+        "C1_expatriates_total",
+        "C2",
+        "C3",
+        "C4",
+        "C5a_undergraduate_minimum",
+        "C5a_undergraduate_maximum",
+        "C5b_postgraduate_minimum",
+        "C5b_postgraduate_maximum",
+        "C5c_college_minimum",
+        "C5c_college_maximum",
+        "C5d_schoollever_minimum",
+        "C5d_schoollever_maximum",
+        "C6",
+        "C6_2specify",
+        "C7a_age_skilledprofessional",
+        "C7a_age_lowskilledmanual",
+        "C7b_sex_skilledprofessional",
+        "C7b_sex_lowskilledmanual",
+        "C7c_maritalstatus_skilledprofess",
+        "C7c_maritalstatus_lowskilledmanu",
+        "C7d_qualifications_skilledprofes",
+        "C7d_qualifications_lowskilledman",
+        "C7e_language_skilledprofessional",
+        "C7e_language_lowskilledmanual",
+        "C8_1",
+        "C8_2",
+        "C8_3",
+        "C8_4",
+        "C8_5",
+        "C8_6",
+        "C8_7",
+        "C8_8",
+        "C8_9",
+        "C9",
+        "C10_1",
+        "C10_2",
+        "C10_3",
+        "C11",
+        "C11_12other"
+      ],
+      "duplicate_headers": {}
+    },
+    {
+      "file": "SWTS_InSchool.csv",
+      "rows": 7026,
+      "columns": 72,
+      "headers": [
+        "state",
+        "module",
+        "strata",
+        "form",
+        "form_others",
+        "gender",
+        "ethnic",
+        "ethnic_a",
+        "age",
+        "SchoolType1",
+        "A11",
+        "A12_year",
+        "A3",
+        "A3_a",
+        "A4_oldbro",
+        "A4_oldsis",
+        "A4_ybro",
+        "A4_ysis",
+        "A5_father",
+        "A5_father_others",
+        "A5_mother",
+        "A5_mother_other",
+        "A6_1",
+        "A6_2",
+        "A7_father",
+        "A7_mother",
+        "A8",
+        "B1_1",
+        "B1_2",
+        "B1_3",
+        "B1_4",
+        "B1_5",
+        "B1_6",
+        "B2",
+        "B2_4other",
+        "B3",
+        "B4",
+        "B4_8other",
+        "B5",
+        "B5_8other",
+        "B6",
+        "B6_13other",
+        "B7",
+        "B7_depends",
+        "C1",
+        "C1_12_other",
+        "C2_men",
+        "C2_women",
+        "C3",
+        "C3_12other",
+        "C4",
+        "C4_14_other",
+        "C5",
+        "C5_12other",
+        "C6",
+        "C7",
+        "C7_19other",
+        "C8",
+        "C8_12other",
+        "C9",
+        "C10",
+        "C11_migrant",
+        "C11_migrant_3agree",
+        "C11_migrant_7disagree",
+        "C11_expatriate",
+        "C11_expatriate_3agree",
+        "C11_expatriate_7disagree",
+        "C12_migrant",
+        "C12_expatriate",
+        "C13_migrant",
+        "C13_expatriate",
+        "C14"
+      ],
+      "duplicate_headers": {}
+    }
+  ],
+  "notes": [
+    "Definitions are module-specific. Storage types are not measurement scales.",
+    "The website and linked 2017 manual/questionnaires have different coding or question numbering in some fields. Do not transfer all response labels automatically.",
+    "No identifiable weighting column exists in the recovered SWTS CSV headers.",
+    "Blank cells, #NULL! strings and coded nonresponse must be interpreted field by field."
+  ]
+}
