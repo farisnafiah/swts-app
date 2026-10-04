@@ -4,3 +4,6 @@ __pycache__/
 /visualisation_app/data/
 *.log
 .env
+database/build/*.sqlite
+database/build/*.sqlite-*
+database/build/*.tmp
