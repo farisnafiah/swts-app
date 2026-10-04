@@ -1,4 +1,4 @@
-"""Read-only FastAPI backend for the TVET visualisations."""
+"""FastAPI backend and static frontend for the TVET visualisations."""
 
 from __future__ import annotations
 
@@ -120,7 +120,7 @@ def get_connection() -> Iterator[sqlite3.Connection]:
     if not DATABASE_PATH.is_file():
         raise HTTPException(
             status_code=503,
-            detail="Database not found. Run: python scripts/build_database.py",
+            detail="Database not found. Run: python database/build_database.py",
         )
 
     connection = sqlite3.connect(

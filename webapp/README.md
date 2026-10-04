@@ -1,4 +1,4 @@
-# TVET visualisation backend
+# TVET visualisation web app
 
 The application combines a read-only FastAPI backend with a page containing
 both notebook visuals: school-pathway distribution by ethnicity and maximum
@@ -10,8 +10,8 @@ served by FastAPI and reads its data from the versioned API contract.
 Build the SQLite database, then start the API from the repository root:
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\build_database.py
-.\.venv\Scripts\python.exe scripts\run_api.py --reload
+.\.venv\Scripts\python.exe database\build_database.py
+.\.venv\Scripts\python.exe webapp\run.py --reload
 ```
 
 Open <http://127.0.0.1:8000> for the visualisation. Swagger UI remains at <http://127.0.0.1:8000/docs>, and the machine-readable OpenAPI schema is at <http://127.0.0.1:8000/openapi.json>.

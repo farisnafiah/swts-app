@@ -12,7 +12,7 @@ model is built.
 Run these commands from the repository root:
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\build_database.py
+.\.venv\Scripts\python.exe database\build_database.py
 ```
 
 On macOS or Linux, replace `.\.venv\Scripts\python.exe` with
