@@ -2,6 +2,12 @@
 
 An independent visualisation project using Khazanah Research Institute's School-to-Work Transition Survey (SWTS). The project follows the data from its original public files, through analysis and a SQLite data layer, to an interactive web app.
 
+**[Open the live interactive visualisation](https://swts-app.onrender.com/)**
+
+[Explore the FastAPI documentation](https://swts-app.onrender.com/docs) · [Check service health](https://swts-app.onrender.com/health)
+
+The public demo runs on Render's free tier, so the first visit after a period of inactivity may take up to a minute to load.
+
 ## Project initiation
 
 The aim is to build a web app that fetches data from a database, visualises it and allows the result to be filtered. The project started with the evidence rather than a predetermined chart: find a suitable Malaysian dataset, understand what has already been analysed, and then decide what should be visualised.
